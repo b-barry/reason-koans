@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "bs-containers": "bassjacob/bs-containers",
-    "bs-platform": "1.7.5",
+    "bs-platform": "2.0.0",
     "mocha": "^3.2.0",
     "nodemon": "^1.11.0",
     "npm-run-all": "^4.0.2"

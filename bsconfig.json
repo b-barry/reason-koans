@@ -8,5 +8,6 @@
   ],
   "bs-dependencies": [
     "bs-containers"
-  ]
+  ],
+  "refmt": 3
 }

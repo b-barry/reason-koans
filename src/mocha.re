@@ -1,15 +1,15 @@
-external describe : string => (unit => unit) => unit = "describe" [@@bs.val] [@@bs.module "mocha"];
+[@bs.val] [@bs.module "mocha"] external describe : (string, unit => unit) => unit = "describe";
 
-external it : string => (unit => unit) => unit = "it" [@@bs.val] [@@bs.module "mocha"];
+[@bs.val] [@bs.module "mocha"] external it : (string, unit => unit) => unit = "it";
 
-external only : string => (unit => unit) => unit = "it.only" [@@bs.val];
+[@bs.val] external only : (string, unit => unit) => unit = "it.only";
 
-external ok : 'a => unit = "ok" [@@bs.val] [@@bs.module "assert"];
+[@bs.val] [@bs.module "assert"] external ok : 'a => unit = "ok";
 
-external eq : 'a => 'a => unit = "equal" [@@bs.val] [@@bs.module "assert"];
+[@bs.val] [@bs.module "assert"] external eq : ('a, 'a) => unit = "equal";
 
-external neq : 'a => 'a => unit = "notEqual" [@@bs.val] [@@bs.module "assert"];
+[@bs.val] [@bs.module "assert"] external neq : ('a, 'a) => unit = "notEqual";
 
-external deq : 'a => 'a => unit = "deepEqual" [@@bs.val] [@@bs.module "assert"];
+[@bs.val] [@bs.module "assert"] external deq : ('a, 'a) => unit = "deepEqual";
 
-external dneq : 'a => 'a => unit = "notDeepEqual" [@@bs.val] [@@bs.module "assert"];
+[@bs.val] [@bs.module "assert"] external dneq : ('a, 'a) => unit = "notDeepEqual";
