@@ -1,5 +1,5 @@
 {
-  "name": "koans",
+  "name": "reason-scripts",
   "sources": [
     {
       "dir": "src",
@@ -7,7 +7,14 @@
     }
   ],
   "bs-dependencies": [
-    "bs-containers"
+    "reason-react",
+    "bs-jest"
+  ],
+  "reason": {
+    "react-jsx": 2
+  },
+  "bsc-flags": [
+    "-bs-super-errors"
   ],
   "refmt": 3
 }
